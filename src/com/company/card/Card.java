@@ -5,6 +5,7 @@ public class Card implements CardInterface {
     private CardValueEnum cardValue;
 
     public Card(CardValueEnum cardValue, SuitEnum suit){
+        //TODO 'this' is only used in ambiguous methods such as setters and constructors
         this.cardValue = cardValue;
         this.suit = suit;
     }
@@ -18,6 +19,7 @@ public class Card implements CardInterface {
     }
 
     public CardValueEnum getCardValue(){
+        //TODO no need for 'this'
         return cardValue;
     }
 

@@ -7,7 +7,7 @@ import com.company.deck.Deck;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class Hand {
+public class Hand implements HandInterface{
     private ArrayList<Card> hand = new ArrayList<>(5);
     private String handName;
 
@@ -22,6 +22,7 @@ public class Hand {
     }
 
     //This constructor is for testing purposes. We don't want a random com.company.hand.
+    //TODO if it is for testing purposes, this should be in the test package.
     public Hand(ArrayList<Card> hand, String handName){
         this.handName = handName;
         this.hand = hand;
@@ -44,7 +45,7 @@ public class Hand {
         return toPrint.toString();
     }
 
-    public void add(int index, Card card){
+    public void add(Integer index, Card card){
         hand.add(index, card);
     }
 }

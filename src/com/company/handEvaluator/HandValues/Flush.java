@@ -17,6 +17,7 @@ public class Flush implements Evaluator {
 		this.hand2 = hand2;
 	}
 
+	@Override
 	public Hand evaluate(){
 		//initialize the winner
 		Hand winner = null;
