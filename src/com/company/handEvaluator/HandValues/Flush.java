@@ -8,6 +8,10 @@ import com.company.hand.Hand;
  * A flush is when a hand contains five cards of the same suit.
  * Hands which are both flushes are ranked using the rules for high card.
  */
+//TODO refactor code in smaller methods (methods should be between 15-25 lines long max) but some exceptions can be made
+// See Clean Code best practices
+// DRY principle, naming conventions, not to many comments (code should be self explanatory)
+// Remove unnecessary casting (Declare list as following List<Card> list = new ArrayList<>(); to avoid this casting)
 public class Flush implements Evaluator {
 	private Hand hand1;
 	private Hand hand2;
@@ -17,6 +21,7 @@ public class Flush implements Evaluator {
 		this.hand2 = hand2;
 	}
 
+	//TODO @Override on interface methods
 	@Override
 	public Hand evaluate(){
 		//initialize the winner

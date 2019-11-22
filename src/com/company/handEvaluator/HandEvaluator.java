@@ -26,6 +26,7 @@ public class HandEvaluator {
 
         Hand winner = null;
         //TODO How can I do this better!?
+        //
         List<Evaluator> values = getCases(hand1,hand2);
 
         for (Evaluator evaluator : values){
